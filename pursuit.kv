@@ -1,0 +1,40 @@
+<PursuitGame>:
+    FloatLayout:
+        size: self.parent.width, self.parent.height
+        canvas:
+            Rectangle:
+                source: 'res/bg1.jpg'
+                size: self.size
+
+    FloatLayout:
+        size: self.parent.width * 0.9, self.parent.height * 0.7
+        canvas:
+            Rectangle:
+                size: self.size
+                pos: 60, 230
+
+    Button:
+        id: Up
+        size: 100, 100
+        pos: 550, 100
+        Label:
+            font_size: 70
+            font_name: 'font/font.ttf'
+            center_x: root.width / 20 *16
+            color: [1,0,0,1]
+            text: "Pursuit"
+
+    Button:
+        id: Down
+        size: 100, 100
+        pos: 550, 0
+
+    Button:
+        id: Left
+        size: 100, 100
+        pos: 450, 0
+
+    Button:
+        id: Right
+        size: 100, 100
+        pos: 650, 0
